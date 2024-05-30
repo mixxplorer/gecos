@@ -1,0 +1,14 @@
+[package]
+name = "gecos"
+description = "Provides parsing and generation of gecos strings"
+version = "0.1.0"
+edition = "2021"
+authors = ["Leonard Marschke <leo@mixxplorer.de>"]
+readme = "Readme.md"
+repository = "https://rechenknecht.net/mixxplorer/libraries/gecos"
+license = "MIT OR Apache-2.0"
+keywords = ["gecos", "nss"]
+categories = ["authentication", "config", "data-structures"]
+
+[dependencies]
+thiserror = "1.0.61"
