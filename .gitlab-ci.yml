@@ -1,0 +1,29 @@
+image: dr.rechenknecht.net/bauhelfer/container/main/rust:latest
+
+stages:
+  - test
+  - build
+  - lint
+
+test:
+  stage: test
+  needs: []
+  script:
+    - cargo test
+    # Just test generating the docs does succeed, real docs will be published once we release to crates.io/crates/gecos
+    - cargo doc
+
+lint:
+  stage: lint
+  needs: []
+  script:
+    - rustup component add clippy
+    - cargo clippy -- -Dwarnings
+    - rustup component add rustfmt
+    - cargo fmt --all -- --check
+
+build:
+  stage: build
+  needs: []
+  script:
+    - cargo build --release
