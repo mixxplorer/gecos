@@ -11,4 +11,4 @@ keywords = ["gecos", "nss"]
 categories = ["authentication", "config", "data-structures"]
 
 [dependencies]
-thiserror = "1.0.61"
+thiserror = "1.0"
