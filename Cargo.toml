@@ -1,7 +1,7 @@
 [package]
 name = "gecos"
 description = "Provides parsing and generation of gecos strings"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Leonard Marschke <leo@mixxplorer.de>"]
 readme = "Readme.md"
